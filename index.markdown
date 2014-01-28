@@ -9,4 +9,4 @@ Several reference technical documents are made available here.
 
 ## API Manager
 
-Technical information on the move to WSO2 [API Manager](/apimanager/overview)
+Technical information on the move to WSO2 [a API Manager](/apimanager/overview)
