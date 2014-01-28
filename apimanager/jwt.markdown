@@ -12,6 +12,11 @@ section: apimanager/overview
 
 When API providers are invoked they may need to access runtime information about who is currently calling their service. API Manager is configured to provide service publishers with data that can provide that information.
 
+Consider this HTTP GET REST service invocation that arrived at a service provider requesting a list of data. Looking at the HTTP headers we can see that the HTTP request comes with a 'x-jwt-assertion' header. This header value contains a JSON Web Token ([JWT](http://tools.ietf.org/html/draft-ietf-oauth-json-web-token-15)).  API Manager uses JWT to pass enduser credentials of the API invoker to the backend API implementation. When the JWT is signed - as it is here -  the general form of the JWT is {...}.{...}.{...} - Three strings delimited by periods. ([more information on the JWT creation](http://docs.wso2.org/pages/viewpage.action?pageId=32350971)). These three parts represent:
+* JWT Header
+* JWT Claims Set
+* JSON Web Signature (JWS)
+
 
 	GET /api/rest/v0.1/students 200 20ms - 822b
 	{ host: 'act-rest-api.pcfapps.vsel-canopy.com',
