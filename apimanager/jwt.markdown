@@ -33,11 +33,23 @@ Looking at the HTTP headers we can see that the HTTP request comes with a 'x-jwt
 	  * JWT Claims Set
 	  * JSON Web Signature (JWS)
  
-Each of these components of the JWT are [base64-encoded](http://en.wikipedia.org/wiki/Base64). When a service provider receives a JWT they can split the token and decode the values. The decoded JWT Header from the example provides:
+Each of these components of the JWT are [base64-encoded](http://en.wikipedia.org/wiki/Base64). When a service provider receives a JWT they can split the token and decode the values. For example, if our services were implemented with Node.js express we might have a route handler for students.js that accessed the JWT Claims Set
 
-	{"typ":"JWT","alg":"SHA256withRSA","x5t":"NmJmOGUxMzZlYjM2ZDRhNTZlYTA1YzdhZTRiOWE0NWI2M2JmOTc1ZA=="}
-	
-	
+
+	exports.list = function(req, res) {
+		var jwt = req.headers['x-jwt-assertion'];
+		if(jwt) {
+			var jwtArray = jwt.split('.');
+			var jwtHeader = new Buffer(jwtArray[0], 'base64');
+			var jwtClaims = new Buffer(jwtArray[1], 'base64');
+			var jws = new Buffer(jwtArray[2], 'base64');
+		...	
+	};
+
+
+The decoded JWT Header from the example provides:
+
+	{"typ":"JWT","alg":"SHA256withRSA","x5t":"NmJmOGUxMzZlYjM2ZDRhNTZlYTA1YzdhZTRiOWE0NWI2M2JmOTc1ZA=="}	
  
 As we can see, the JWT was signed using SHA256/RSA. The "x5t" (x.509 certificate thumbprint) header parameter provides a base64url encoded SHA-256 thumbprint (a.k.a. digest) of the DER encoding of an X.509 certificate that can be used to match a certificate., e.g.
 
@@ -45,7 +57,6 @@ As we can see, the JWT was signed using SHA256/RSA. The "x5t" (x.509 certificate
 
 The JWT Claims Set is where we get the caller identifying information:
 
-  
 	{
 		"iss": "wso2.org/products/am",
 		"exp": 1390934717295,
@@ -61,8 +72,8 @@ The JWT Claims Set is where we get the caller identifying information:
 		"http://wso2.org/claims/enduser": "admin",
 		"http://wso2.org/claims/enduserTenantId": "-1234",
 		"http://wso2.org/claims/role": "admin,subscriber,Internal/everyone"
-	}
-	
+	}	
+
 <ul class="pager">
   <li class="previous"><a href="/apimanager/overview">&larr; Back</a></li>
 </ul>
