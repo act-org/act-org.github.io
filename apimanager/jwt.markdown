@@ -4,7 +4,7 @@ title: API Manager -  Overview
 section: apimanager/overview
 ---
   
-<a href="/apimanager/overview" class="orange-button"> ^ </a>
+<a href="/apimanager/overview" class="orange-button glyphicon glyphicon-chevron-up"> </a>
 
 # JWT: Who should I say is calling?
 
