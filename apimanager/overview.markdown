@@ -6,8 +6,11 @@ section: apimanager/overview
   
 
 # Overview
-As part of the move to WSO2 API Manager there are several elements to consider.
+As part of the move to WSO2 [API Manager](http://wso2.com/products/api-manager/) there are several elements to consider.
 
-## Publisher
+## Publisher/Service Provider
 
-## Store 
+### [JWT: Who should I say is calling?](jwt)
+
+## Store/Service Consumer
+
