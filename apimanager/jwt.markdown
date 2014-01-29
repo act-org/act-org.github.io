@@ -83,6 +83,16 @@ The API Manager issued token contains:
 1. Tier, keytype and usertype of the app 
 1. Enduser and tenant id of the app who's action invoked the API 
 1. Roles the enduser has
+
+These claims can be changed or added to by switching out the '<ClaimsRetrieverImplClass>' in '<APIM_HOME>/repository/conf/api-manager.xml' with another implementation.
+
+	<APIConsumerAuthentication>
+    	<SecurityContextHeader>X-JWT-Assertion</SecurityContextHeader>
+    	<ClaimsRetrieverImplClass>org.wso2.carbon.apimgt.impl.token.DefaultClaimsRetriever</ClaimsRetrieverImplClass>
+    	<ConsumerDialectURI>http://wso2.org/claims</ConsumerDialectURI>
+    	<SignatureAlgorithm>SHA256withRSA</SignatureAlgorithm>
+    	<EnableTokenGeneration>true</EnableTokenGeneration>
+	</APIConsumerAuthentication>
 	
 <ul class="pager">
   <li class="previous"><a href="/apimanager/overview">&larr; Back</a></li>
