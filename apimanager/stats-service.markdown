@@ -18,6 +18,10 @@ and a dashboard that provides statistics on invocations.
 
 ![Stats](img/stats-service-stats.png "Stats")
 
+including information on stats on a per version basis.
+
+![Version Stats](img/stats-service-vstats.png "Version Stats")
+
 <ul class="pager">
   <li class="previous"><a href="/apimanager/overview">&larr; Back</a></li>
 </ul>

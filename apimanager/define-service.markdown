@@ -10,7 +10,7 @@ section: apimanager/overview
 
 # Defining the API
 
-Service providers will be given an account to define their services and provided the url to the WSO2 API Manager publisher webapp. 
+Service providers will be given an account to define their services and provided the url for each environment (dev, test, stress, prod) to the WSO2 API Manager publisher webapp. 
 
 ![Add Service](img/define-service-add.png "Add Service")
 
