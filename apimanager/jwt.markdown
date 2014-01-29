@@ -32,7 +32,7 @@ Looking at the HTTP headers we can see that the HTTP request comes with a 'x-jwt
 	  * JWT Claims Set
 	  * JSON Web Signature (JWS)
  
-Each of these components of the JWT are [base64-encoded](http://en.wikipedia.org/wiki/Base64). When a service provider receives a JWT they can split the token and decode the values. For example, if our services were implemented with [Node.js](http://nodejs.org) [express](http://expressjs.com) we might have a route handler for students.js that accessed the JWT Header, Claims Set, JWS:
+Each of these components of the JWT are [base64-encoded](http://en.wikipedia.org/wiki/Base64). When a service provider receives a JWT they can split the token and decode the values. For example, if our services were implemented with [Node.js](http://nodejs.org) [express](http://expressjs.com) (see e.g. <https://github.com/act-org/act-rest-api>) we might have a route handler for students.js that accessed the JWT Header, Claims Set, JWS:
 
 
 	exports.list = function(req, res) {
