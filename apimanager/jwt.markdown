@@ -84,7 +84,7 @@ The API Manager issued token contains:
 1. Enduser and tenant id of the app who's action invoked the API 
 1. Roles the enduser has
 
-These claims can be changed or added to by switching out the '<ClaimsRetrieverImplClass>' in '<APIM_HOME>/repository/conf/api-manager.xml' with another implementation.
+These claims can be changed or added to by switching out the `<ClaimsRetrieverImplClass>` in `<APIM_HOME>/repository/conf/api-manager.xml` with another implementation.
 
 	<APIConsumerAuthentication>
     	<SecurityContextHeader>X-JWT-Assertion</SecurityContextHeader>
