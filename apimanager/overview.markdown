@@ -39,4 +39,4 @@ The [BAM](http://wso2.com/products/business-activity-monitor/) provides the stat
 
 ## Governance
 
-TBD. Present information on approval workflows, etc.
+- [Approval workflow management](governance)
