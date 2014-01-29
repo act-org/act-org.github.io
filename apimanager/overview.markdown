@@ -15,7 +15,7 @@ Software teams manage and publish services that will be accessed by various cons
 - [Defining the API](define-service)
 - [Publishing to the Gateway](publish-service)
 - [JWT: Identifying the Consumer](jwt)
-- [Reviwing API Statistics](stats-service)
+- [Reviewing API Statistics](stats-service)
 
 ## Store/Service Consumer
 
