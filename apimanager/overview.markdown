@@ -22,7 +22,6 @@ Software teams manage and publish services that will be accessed by various cons
 Application teams that need access to published APIs will visit a store where they can register the application and subscribe to managed APIs.
 
 - [Defining the Consumer](define-consumer)
-- [Subscribe to API](subscribe)
 - [Test Invoke API](test-consumer)
 - [Client invocation](client-consumer)
 
