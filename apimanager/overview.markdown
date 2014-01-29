@@ -12,7 +12,7 @@ As part of the move to WSO2 [API Manager](http://wso2.com/products/api-manager/)
 
 Software teams manage and publish services that will be accessed  
 
-### [JWT: Who should I say is calling?](jwt)
+### [JWT: Identifying the Consumer](jwt)
 
 ## Store/Service Consumer
 
