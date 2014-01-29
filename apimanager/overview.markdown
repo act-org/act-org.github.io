@@ -8,22 +8,22 @@ section: apimanager/overview
 # Overview
 As part of the move to WSO2 [API Manager](http://wso2.com/products/api-manager/) there are several elements to consider. We will make the distinction between **services** that are registered and published and **APIs** that are managed which expose access to them. 
 
-## Publisher/Service Provider
+## Publisher/API Provider
 
-Software teams manage and publish services that will be accessed by various consumers. Providers can define their service methods and what level of service access they would like to offer.
+Software teams manage and publish services that will be accessed by various consumers as managed APIs. Providers can define their API/service methods and what level of service access they would like to offer.
 
 - [Defining the API](define-service)
 - [Publishing to the Gateway](publish-service)
 - [JWT: Identifying the Consumer](jwt)
 - [Reviewing API Statistics](stats-service)
 
-## Store/Service Consumer
+## Store/API Consumer
 
-Application teams that need access to published services will visit a store where they can register the application and subscribe to services.
+Application teams that need access to published APIs will visit a store where they can register the application and subscribe to managed APIs.
 
 - [Defining the Consumer](define-consumer)
-- [Subscribe to Service](subscribe)
-- [Test Invoke Services](test-consumer)
+- [Subscribe to API](subscribe)
+- [Test Invoke API](test-consumer)
 - [Client invocation](client-consumer)
 
 ## Gateway
