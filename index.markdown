@@ -17,3 +17,7 @@ A set of standards to guide implementation teams on:
 
 * Building composable [services](/standards/service)
 * Developing [web applications](/standards/webdev)
+
+## Integrations
+
+* Integrating [ADFS with Drupal](/integrations/adfs-drupal)
