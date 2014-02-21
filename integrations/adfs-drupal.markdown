@@ -182,15 +182,30 @@ This involved making a SAML AuthnRequest assertion (which we can trace using [SA
 
 On the successful presentation of account credentials we are redirected back into the Drupal site. If the user account didn't already in Drupal it is provisioned automatically.
 
-![flow3](img/flow4.png "info")
+![flow4](img/flow4.png "info")
 
 ---
 
 This involved accepting the SAML response.
 
-![flow3](img/flow5.png "info")
+![flow5](img/flow5.png "info")
 
 --- 
+
+### Additional Info
+
+It should also be mentioned that the simple SAML module provides a nice little console where you can inspect and troubleshoot your SAML configuration. You simply navigate to '/simplesaml' and are presented with tabs relating to configuration, federation and authentication.
+
+![ss1](img/ss1.png "info")
+
+--- 
+![ss2](img/ss2.png "info")
+
+--- 
+![ss3](img/ss3.png "info")
+
+--- 
+
 
 ### Resources
 
