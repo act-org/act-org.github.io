@@ -14,7 +14,7 @@ Information is provided in the publisher app as to who is subscribed to their AP
 
 ---
 
-![Subscribers](img/stats-service-subscribers.png "Subscribers")
+![Subscribers]({{ site.url }}/apimanager/img/stats-service-subscribers.png "Subscribers")
 
 ---
 
@@ -22,7 +22,7 @@ and a dashboard that provides statistics on invocations.
 
 ---
 
-![Stats](img/stats-service-stats.png "Stats")
+![Stats]({{ site.url }}/apimanager/img/stats-service-stats.png "Stats")
 
 ---
 
@@ -30,7 +30,7 @@ including information on stats on a per version basis.
 
 ---
 
-![Version Stats](img/stats-service-vstats.png "Version Stats")
+![Version Stats]({{ site.url }}/apimanager/img/stats-service-vstats.png "Version Stats")
 
 ---
 

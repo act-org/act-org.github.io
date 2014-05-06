@@ -14,7 +14,7 @@ API consumers will be given an account to define their applications and provided
 
 ---
 
-![Add App](img/define-consumer-add.png "Add App")
+![Add App]({{ site.url }}/apimanager/img/define-consumer-add.png "Add App")
 
 ---
 
@@ -22,7 +22,7 @@ As part of defining the application, consumers can subscribe to the APIs that wi
 
 ---
 
-![Subscribe](img/define-consumer-subscribe.png "Subscribe")
+![Subscribe]({{ site.url }}/apimanager/img/define-consumer-subscribe.png "Subscribe")
 
 ---
 
@@ -30,7 +30,7 @@ The subscription provides the application with the [OAuth2](http://oauth.net/2/)
 
 ---
 
-![Credentials](img/define-consumer-creds.png "Credentials")
+![Credentials]({{ site.url }}/apimanager/img/define-consumer-creds.png "Credentials")
 
 ---
 

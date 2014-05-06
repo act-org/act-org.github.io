@@ -14,7 +14,7 @@ When a new API is defined it is in a default lifecycle state of "Created".
 
 ---
 
-![Created](img/publish-service-created.png "Created")
+![Created]({{ site.url }}/apimanager/img/publish-service-created.png "Created")
 
 ---
 
@@ -22,7 +22,7 @@ when the API is moved to a "Published" state it will become available in the API
 
 ---
 
-![Published](img/publish-service-published.png "Published")
+![Published]({{ site.url }}/apimanager/img/publish-service-published.png "Published")
 
 ---
 

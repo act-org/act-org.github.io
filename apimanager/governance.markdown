@@ -14,7 +14,7 @@ There is quite a bit of work to do in this area to address governance needs. For
 
 ---
 
-![Governance Approvals](img/governance-approvals.png "Governance Approvals")
+![Governance Approvals]({{ site.url }}/apimanager/img/governance-approvals.png "Governance Approvals")
 
 ---
 

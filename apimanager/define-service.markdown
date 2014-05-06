@@ -14,7 +14,7 @@ Service providers will be given an account to define their services and provided
 
 ---
 
-![Add Service](img/define-service-add.png "Add Service")
+![Add Service]({{ site.url }}/apimanager/img/define-service-add.png "Add Service")
 
 ---
 
@@ -22,7 +22,7 @@ As part of defining the service, API resources are configured that map to the un
 
 ---
 
-![Add API](img/define-service-api.png "Add API")
+![Add API]({{ site.url }}/apimanager/img/define-service-api.png "Add API")
 
 ---
 

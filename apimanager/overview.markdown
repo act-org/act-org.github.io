@@ -13,17 +13,17 @@ As part of the move to WSO2 [API Manager](http://wso2.com/products/api-manager/)
 Software teams manage and publish services that will be accessed by various consumers as managed APIs. Providers can define their API/service methods and what level of service access they would like to offer.
 
 - [Defining the API](/apimanager/define-service)
-- [Publishing to the Gateway](publish-service)
-- [JWT: Identifying the Consumer](jwt)
-- [Reviewing API Statistics](stats-service)
+- [Publishing to the Gateway](/apimanager/publish-service)
+- [JWT: Identifying the Consumer](/apimanager/jwt)
+- [Reviewing API Statistics](/apimanager/stats-service)
 
 ## Store/API Consumer
 
 Application teams that need access to published APIs will visit a store where they can register the application and subscribe to managed APIs.
 
-- [Defining the Consumer](define-consumer)
-- [Test Invoke API](test-consumer)
-- [Client invocation](client-consumer)
+- [Defining the Consumer](/apimanager/define-consumer)
+- [Test Invoke API](/apimanager/test-consumer)
+- [Client invocation](/apimanager/client-consumer)
 
 ## Gateway
 
@@ -39,4 +39,4 @@ The [BAM](http://wso2.com/products/business-activity-monitor/) provides the stat
 
 ## Governance
 
-- [Approval workflow management](governance)
+- [Approval workflow management](/apimanager/governance)

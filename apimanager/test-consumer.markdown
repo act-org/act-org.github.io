@@ -14,7 +14,7 @@ API consumers can interactively invoke the subscribed APIs from within the store
 
 ---
 
-![REST Client]({{ site.url }}/img/test-consumer-rest.png "REST Client")
+![REST Client]({{ site.url }}/apimanager/img/test-consumer-rest.png "REST Client")
 
 ---
 
@@ -22,7 +22,7 @@ When the API providers define and publish their API, API Manager automatically g
 
 ---
 
-![Swagger](img/test-consumer-swagger.png "Swagger")
+![Swagger]({{ site.url }}/apimanager/img/test-consumer-swagger.png "Swagger")
 
 ---
 
