@@ -3,7 +3,6 @@ layout: default
 title: ACT Team Profiles 2014
 section: standards/team-profiles-2014
 ---
-<!--
 # Overview
 ACT is preparing to collect and publish a set of standards and processes that will support and inform ACT software development practices. This effort is driven by a need to:
 
@@ -89,4 +88,3 @@ TBD
 <script type='text/javascript' src='/assets/js/google-pie1.js'></script>
 <script type='text/javascript' src='/assets/js/google-pie2.js'></script>
 <script type='text/javascript' src='/assets/js/google-geo1.js'></script>
--->
