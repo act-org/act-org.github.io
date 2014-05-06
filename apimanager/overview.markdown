@@ -29,7 +29,7 @@ Application teams that need access to published APIs will visit a store where th
 
 The gateway is responsible for:
 
-- dispatching all of the required API traffic with identifying [JWT](jwt) data
+- dispatching all of the required API traffic with identifying [JWT](/apimanager/jwt) data
 - cache management of service responses where designated
 - ensuring that the appropriate security credentials have been provided
 - recording activity to the BAM

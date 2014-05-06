@@ -28,11 +28,11 @@ In order to integrate ACT's Active Directory with Drupal it was decided that thi
 
 ACT already had a public facing ADFS that it was using to integrate with other services. Under the ADFS federation service properties ...
 
-![ADFS1](img/adfs1.jpg "Properties")
+![ADFS1]({{ site.url }}/integrations/img/adfs1.jpg "Properties")
 
 we can confirm the "federation service identifier" to use for this integration. This will be used on the drupal side to configure the access.
 
-![ADFS2](img/adfs2.jpg "Check info")
+![ADFS2]({{ site.url }}/integrations/img/adfs2.jpg "Check info")
 
 Next we needed to add a new "relying party trust" to ADFS. In the ADFS 2.0 Management console this can be done by selecting "Relying Party Trusts" and "add Relaying party Trust" from the top right corner of the window. Using the wizard we had requested the following configuration:
 
@@ -42,11 +42,11 @@ Next we needed to add a new "relying party trust" to ADFS. In the ADFS 2.0 Manag
 * Permit all users
 * Relying party service URL: https://live-act-abg.gotpantheon.com/simplesaml/module.php/saml/sp/saml2-acs.php/default-sp
  
- ![ADFS3](img/adfs3.png "info")
+![ADFS3]({{ site.url }}/integrations/img/adfs3.png "info")
  
  We also required editing of the claim rules so that we had outgoing claim types of UPN, E-Mail Address, Name, Name ID that were all matched against relevant AD attributes.
 
-![ADFS4](img/adfs4.png "Check info")
+![ADFS4]({{ site.url }}/integrations/img/adfs4.png "Check info")
 
 Finally, we also required a copy of the token-signing certificate from ADFS that we would be able to use on the drupal side. This involved browsing to the certificates in ADFS management console, e.g.
 
@@ -140,19 +140,19 @@ There were some additional security/production measures we took with the /privat
 
 Finally, we configured the simplesamlphp_auth module from the console:
 
-![simple1](img/simple1.png "info")
+![simple1]({{ site.url }}/integrations/img/simple1.png "info")
 
 ---
 
 We checked the activate and force https options and double-checked the installation directory and auth source. 
 
-![simple2](img/simple2.png "info")
+![simple2]({{ site.url }}/integrations/img/simple2.png "info")
 
 ---
 
 Then we plugged in the attribute data from the claims to map into the Drupal user attributes.
 
-![simple3](img/simple3.png "info")
+![simple3]({{ site.url }}/integrations/img/simple3.png "info")
 
 ---
 
@@ -160,35 +160,35 @@ Then we plugged in the attribute data from the claims to map into the Drupal use
 
 With both ADFS setup and Drupal configured with the simplesamlphp module live we can now navigate to the homepage. The idea here is that we will follow a flow similar to this one where Drupal is in the role of the ASP.NET Web Portal.
 
-![flow](img/adfs-flow.png "info")
+![flow]({{ site.url }}/integrations/img/adfs-flow.png "info")
 
 That is, we will go to the Drupal site, redirect to the ADFS STS site where we will present our credentials which will then redirect us back to Drupal with the appropriate claims data. As we can see from this home screen, we now have a "Federated Log In" link.
 
-![flow1](img/flow1.png "info")
+![flow1]({{ site.url }}/integrations/img/flow1.png "info")
 
 ---
 
 When we click that we are taken to the ADFS login.
 
-![flow2](img/flow2.png "info")
+![flow2]({{ site.url }}/integrations/img/flow2.png "info")
 
 ---
 
 This involved making a SAML AuthnRequest assertion (which we can trace using [SAML tracer](https://addons.mozilla.org/en-US/firefox/addon/saml-tracer/) )
 
-![flow3](img/flow3.png "info")
+![flow3]({{ site.url }}/integrations/img/flow3.png "info")
 
 ---
 
 On the successful presentation of account credentials we are redirected back into the Drupal site. If the user account didn't already in Drupal it is provisioned automatically.
 
-![flow4](img/flow4.png "info")
+![flow4]({{ site.url }}/integrations/img/flow4.png "info")
 
 ---
 
 This involved accepting the SAML response.
 
-![flow5](img/flow5.png "info")
+![flow5]({{ site.url }}/integrations/img/flow5.png "info")
 
 --- 
 
@@ -196,13 +196,13 @@ This involved accepting the SAML response.
 
 It should also be mentioned that the simple SAML module provides a nice little console where you can inspect and troubleshoot your SAML configuration. You simply navigate to '/simplesaml' and are presented with tabs relating to configuration, federation and authentication.
 
-![ss1](img/ss1.png "info")
+![ss1]({{ site.url }}/integrations/img/ss1.png "info")
 
 --- 
-![ss2](img/ss2.png "info")
+![ss2]({{ site.url }}/integrations/img/ss2.png "info")
 
 --- 
-![ss3](img/ss3.png "info")
+![ss3]({{ site.url }}/integrations/img/ss3.png "info")
 
 --- 
 
