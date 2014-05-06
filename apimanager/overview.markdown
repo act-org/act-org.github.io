@@ -12,7 +12,7 @@ As part of the move to WSO2 [API Manager](http://wso2.com/products/api-manager/)
 
 Software teams manage and publish services that will be accessed by various consumers as managed APIs. Providers can define their API/service methods and what level of service access they would like to offer.
 
-- [Defining the API](define-service)
+- [Defining the API](/apimanager/define-service)
 - [Publishing to the Gateway](publish-service)
 - [JWT: Identifying the Consumer](jwt)
 - [Reviewing API Statistics](stats-service)

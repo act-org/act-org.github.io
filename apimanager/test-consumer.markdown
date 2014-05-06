@@ -14,7 +14,7 @@ API consumers can interactively invoke the subscribed APIs from within the store
 
 ---
 
-![REST Client](img/test-consumer-rest.png "REST Client")
+![REST Client]({{ site.url }}/img/test-consumer-rest.png "REST Client")
 
 ---
 
